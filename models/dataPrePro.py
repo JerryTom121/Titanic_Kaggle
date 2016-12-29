@@ -222,8 +222,8 @@ def process_ticket(combined):
     status('ticket')
     return combined
 
-def compute_score(clf, X, y,scoring='accuracy'):
-    xval = cross_val_score(clf, X, y, cv = 5, scoring=scoring)
+def compute_score(clf, X, y, cv=5, scoring='accuracy'):
+    xval = cross_val_score(clf, X, y, cv = cv, scoring=scoring)
     return np.mean(xval)
 
 def recover_train_test_target(combined):

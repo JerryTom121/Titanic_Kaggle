@@ -14,7 +14,7 @@ from sklearn.cross_validation import cross_val_score
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 import seaborn as sns
-from xgboost import XGBClassifier
+#from xgboost import XGBClassifier
 import pandas as pd
 import numpy as np
 import models.dataPrePro as prepro
@@ -81,7 +81,7 @@ def main():
         print(x," ",y)
     
     classifiers = [
-    XGBClassifier(),
+    #XGBClassifier(),
     KNeighborsClassifier(3),
     SVC(probability=True),
     DecisionTreeClassifier(),
